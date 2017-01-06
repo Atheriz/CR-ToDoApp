@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo App for SCRUM</title>
+</head>
+
+<body>
+<ul class="details">
+  <% for(var i=0; i<details.length; i++) {%>
+    <li class="detail">
+      <span><%= details[i].name %></span>
+      <span><%= details[i].detail %></span>
+    </li>
+  <% } %>
+</ul>
+
+    <form action="/details" method="POST">
+    <input type ="text" placeholder="name" name="name">
+    <input type ="text" placeholder="detail" name="detail">
+    <button type "submit">Go!</button>
+    </form>
+</body>
+</html> 
