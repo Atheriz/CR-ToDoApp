@@ -1,0 +1,24 @@
+html {
+  font-size: 14px;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+.mainBlock {
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 5%;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color: darkgray;
+}
+
+.mainTitle {
+    font-family: Sans-serif;
+    font-size: 24px;
+    margin-left: 38%;
+    margin-right:30%;
+}

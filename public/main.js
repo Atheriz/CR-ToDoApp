@@ -7,8 +7,8 @@ update.addEventListener('click', function () {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      'name': 'New Detail?',
-      'detail': 'New detail'
+      'name': 'It is now',
+      'detail': 'edited'
     })
   })
   .then(response => {
@@ -16,17 +16,16 @@ update.addEventListener('click', function () {
   })
   .then(data => {
     console.log(data)
+     window.location.reload(true)
   })
 })
 
 del.addEventListener('click', function () {
   fetch('details', {
     method: 'delete',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      'name': 'Very new stuff'
+      'name': 'ForDeletion'
     })
   }).then(function (response) {
     window.location.reload(true)

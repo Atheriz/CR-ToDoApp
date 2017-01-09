@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Demo App for SCRUM</title>
+  <title>Demo CRUD App for SCRUM</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<h1 class="mainTitle">Node/Mongo/Express mini-demo</h1>
+<div class="mainBlock">
 <ul class="details">
   <% for(var i=0; i<details.length; i++) {%>
     <li class="detail">
@@ -14,22 +17,23 @@
     </li>
   <% } %>
 </ul>
-
+    <h3>Add to DB</h3>
     <form action="/details" method="POST">
-    <input type ="text" placeholder="name" name="name">
-    <input type ="text" placeholder="detail" name="detail">
-    <button type "submit">Go!</button>
+      <input type ="text" placeholder="name" name="name">
+      <input type ="text" placeholder="detail" name="detail">
+      <button type "submit">Add</button>
     </form>
 
 <div> 
-<h2> Replaces last detail with a new one <h2>
-<button id="update">Update</button>
+  <h3>Update ForEdit<h3>
+  <button id="update">Update</button>
 </div>
 
  <div>
-    <h2>Delete last detail</h2>
-    <button id="delete"> Delete </button>
-  </div>
+    <h3>Remove ForDeletion</h3>
+    <button id="delete">Delete</button>
+ </div>
+ </div>
 
 
 <script src="main.js"></script>
